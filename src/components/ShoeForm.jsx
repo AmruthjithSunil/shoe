@@ -11,6 +11,12 @@ export default function ShoeForm({ addShoe }) {
       S: s.value,
     };
     addShoe(shoe);
+    shoename.value = "";
+    description.value = "";
+    price.value = "";
+    l.value = "";
+    m.value = "";
+    s.value = "";
   }
   return (
     <form onSubmit={submitHandler}>
